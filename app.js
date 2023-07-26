@@ -4,8 +4,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const port = process.env.PORT || 3000;
 
-const uri = process.env.URI;//"mongodb+srv://tempuser:123@cluster0.f9d6o.gcp.mongodb.net/Exams23002";//
-//const uri = process.env.ATLAS_URI;
+const uri = process.env.ATLAS_URI;
 console.log("Uri : " + uri);
 //mongoose.connect(uri);
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true,  useUnifiedTopology: true   }
